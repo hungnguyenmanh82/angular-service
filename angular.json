@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "a16-service"
+    }
+  },
+  "defaultProject": "a16-service",
+  "cli": {
+    "analytics": "a2462a11-53cd-404a-b893-e5027f48edcd"
+  }
 }
