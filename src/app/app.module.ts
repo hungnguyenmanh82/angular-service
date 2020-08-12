@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { UserService } from './user.service';
-import { LoggerService } from './logger.service';
 import { UserComponent } from './user/user.component';
 import { OutputRxService } from './output-rx.service';
 import { OutputRxComponent } from './output-rx/output-rx.component';
@@ -25,7 +24,6 @@ import { OutputRxComponent } from './output-rx/output-rx.component';
    * tất cả các service = singleton
    */
   providers: [
-    LoggerService,
     UserService,
     OutputRxService
   ],
