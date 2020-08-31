@@ -8,6 +8,10 @@ import { EventEmitter, Injectable, Output } from '@angular/core';
 export class OutputRxService {
   isOpen: boolean = false;
 
+  /**
+   * jump to EventEmitter class sẽ thấy nó là 1 Observable
+   * ko nên dùng @Output ở đây => dùng luôn Observable sẽ clear hơn
+   */
   @Output() change: EventEmitter<boolean> = new EventEmitter<boolean>();
 
   /**

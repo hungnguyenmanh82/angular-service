@@ -1,6 +1,12 @@
 <app-user></app-user>
 
 <!-- ------------------------------test @output of Service ------------------------------ -->
-<p style="color: red;"> press button to trigger event to @output of Service</p>
-<button class="button" (click)="this.outputRxService.toggle()"> isOpen </button>
+<p style="color: red">
+  press button to trigger event to @output of Service
+  <br />
+  * jump to EventEmitter class sẽ thấy nó là 1 Observable
+  <br />
+  * ko nên dùng @Output ở đây => dùng luôn Observable sẽ clear hơn
+</p>
+<button class="button" (click)="this.outputRxService.toggle()">isOpen</button>
 <app-output-rx></app-output-rx>
