@@ -4,9 +4,10 @@
 <p style="color: red">
   press button to trigger event to @output of Service
   <br />
-  * jump to EventEmitter class sẽ thấy nó là 1 Observable
+  * @output của Service giống hệt của Component. Chỉ khác là Service ko có tag ở html.
   <br />
-  * ko nên dùng @Output ở đây => dùng luôn Observable sẽ clear hơn
+  * ko nên dùng @Output ở đây => dùng luôn Rxjs Behavior hay hơn và dễ hiểu hơn
+  <br />
 </p>
 <button class="button" (click)="this.outputRxService.toggle()">isOpen</button>
 <app-output-rx></app-output-rx>
